@@ -1,10 +1,23 @@
-@import url("https://fonts.cdnfonts.com/css/univers-lt-std");
 @font-face {
-  font-family: 'TO Parcel Book';
-  src: url("../asset/fonts/TOParcel-Book.woff") format("woff"), url("../asset/fonts/TOParcel-Book.woff2") format("woff2");
+  font-family: 'Helvetica Now';
+  src: url("../asset/fonts/helvetica-now-w05-text-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url("../asset/fonts/UniversLTStd-BoldCn.woff2") format("woff2"), url("../asset/fonts/UniversLTStd-BoldCn.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  letter-spacing: .025em;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
 }
 
 .header-fill {
@@ -35,9 +48,8 @@
 }
 
 .header a {
-  font-family: "TO Parcel Book";
+  font-family: "Univers LT Std";
   font-size: 1.5rem;
-  padding: 2.2rem;
   /*         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; */
 }
@@ -46,14 +58,12 @@
   width: 20rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .header a {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  .logo {
-    width: 14rem;
-  }
+.explore {
+  padding-left: 2rem;
+}
+
+.menu {
+  padding-right: 2rem;
 }
 
 .main {
@@ -107,24 +117,221 @@
 .description {
   font-size: 1.5rem;
   color: black;
-  font-family: "TO Parcel Book";
-  padding: 2rem;
-  padding-top: 2rem;
+  font-family: "Univers LT Std";
+  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .price {
   font-size: 1.5rem;
   color: black;
-  font-family: "TO Parcel Book";
-  padding: 2rem;
-  padding-top: 2rem;
+  font-family: "Univers LT Std";
+  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .stock {
   font-size: 1.5rem;
   color: black;
-  font-family: "TO Parcel Book";
+  font-family: "Univers LT Std";
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery {
+  height: 100vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 50%;
+  background: #f8f6f6;
+  border-left: 1px solid #a9a2a2;
+  font-family: "Univers LT Std";
+  font-size: 1.5rem;
+}
+
+.text-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-header-md {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 52px;
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: white;
+  z-index: 1;
+  border-left: 1px solid #a9a2a2;
+}
+
+.content-header-md a {
+  font-family: "Univers LT Std";
+  font-size: 1.5rem;
+  /*         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; */
+}
+
+.pagination {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.button {
+  font-family: "Univers LT Std";
+  font-size: 1.5rem;
+  background: transparent;
+  display: inline-block;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.section-a {
   padding: 2rem;
-  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-b {
+  text-align: justify;
+  padding: 2rem;
+}
+
+.section-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .header a {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .explore {
+    padding-left: 1rem;
+  }
+  .menu {
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header-fill {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .content-header-md {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .object {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+  .header-sm-fill {
+    height: 52px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .stock {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .content-header-md a {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=default.css.map */
