@@ -7,6 +7,7 @@ import data from '../../utils/data';
 
 
 
+
 export default function DetailPage() {
   console.log(JSON.stringify(data));
   const { query } = useRouter();
@@ -16,11 +17,23 @@ export default function DetailPage() {
     return <div>404</div>;
   }
 
-
-
   return (
     <>
-          <p>{product.productName}</p>
+
+    <header className='content-header-md'>
+      <a>Explore</a>
+      <img className='logo'src='/images/hasamiporcelain_logo.png'/>
+      <a>Menu</a>
+    </header>
+    <div className='object'>
+      <div className='gallery'>
+      </div>
+      <div className='content'>
+        
+        <p>{product.productName}</p>
+      </div>
+    </div>
+          
 
       </>
 
