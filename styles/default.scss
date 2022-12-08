@@ -1,0 +1,144 @@
+$background : rgb(256, 256, 256);
+$textColor : rgb(0, 0, 0);
+$font : 'TO Parcel Book';
+
+@import url('https://fonts.cdnfonts.com/css/univers-lt-std');
+
+@font-face {
+    font-family: 'TO Parcel Book';
+    src: url('../asset/fonts/TOParcel-Book.woff') format('woff'),
+    url('../asset/fonts/TOParcel-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+}
+
+.header-fill {
+    height: 52px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: $background;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: $background;
+    z-index: 1;
+
+    a {
+        font-family: $font;
+        font-size: 1.5rem;
+        padding: 2.2rem;
+/*         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; */
+    }
+}
+
+
+
+.logo {
+    width: 20rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header a {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .logo {
+        width: 14rem;
+    }
+  }
+
+.main {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.container {
+    position: relative;
+}
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    opacity: 0;
+  }
+
+  .bottom-left-stock {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    opacity: 0;
+  }
+  
+
+.thumbnail:hover {
+    opacity: 0.4;
+    transition: opacity 0.5s;
+
+}
+
+.container:hover {
+    .top-left {
+        opacity: 1;
+    }
+    .bottom-left {
+        opacity:1;
+    }
+}
+
+.description {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: $font;
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: $font;
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.stock {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: $font;
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+
+
+
+
+  

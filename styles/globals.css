@@ -6,8 +6,39 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.header {
-  height: 52px;
+
+.grid {
+  display: grid;
   width: 100%;
-  background: green;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 0;
+  column-gap: 0;
 }
+
+@media only screen and (max-width: 900px) {
+  .grid {
+      display: grid;
+      width: 100%;
+      gap: 0;
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.fill {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+
+
+
+
