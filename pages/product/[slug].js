@@ -28,7 +28,7 @@ export default function DetailPage() {
     <div className='header-sm-fill'></div>
     <div className='object'>
       <div className='gallery'>
-        <img className='pagination'src='/images/HP029.jpg'/>
+        <img className='pagination'src={product.slugImage}/>
       </div>
       <div className='content'>
         <div className='header-fill'></div>
@@ -37,13 +37,13 @@ export default function DetailPage() {
           <div className='section-a'>
             <p>{product.productPrice}</p>
             <p>{product.productName}</p>
-            <button className='button'>Add to bag</button>
+            <button className='button'><p className='center-text'>Add to bag</p></button>
           </div>
           <div className='section-b'>{product.longDescription}</div>
           <div className='section-c'>
-            <p>	• Material: {product.productMaterial}</p>
-            <p>	• Dimensions: {product.productDimension}</p>
-            <p>	• Usage: {product.productUsage}</p>
+            <p className='extra-information'>	• Material: {product.productMaterial}</p>
+            <p className='extra-information'>	• Dimensions: {product.productDimension}</p>
+            <p className='extra-information'>	• Usage: {product.productUsage}</p>
           </div>
 
 
